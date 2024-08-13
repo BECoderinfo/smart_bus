@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-    host: 'sql106.ezyro.com',
-    user: 'ezyro_37076995',
+    host: 'localhost',
+    user: 'root',
     password: '',
-    database: 'ezyro_37076995_smart_bus'
+    database: 'smart_bus'                    
 });
 
 connection.connect((err) => {
