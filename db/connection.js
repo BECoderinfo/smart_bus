@@ -6,8 +6,9 @@ const connection = mysql.createConnection({
     password: 'aSHbor0iiaxunbTY',
     database: 'test',
     ssl: {
-        rejectUnauthorized: true // or false, depending on your setup
-    }
+        rejectUnauthorized: true
+    },
+    connectTimeout: 10000 // Increase the timeout (in milliseconds)
 });
 
 connection.connect((err) => {
