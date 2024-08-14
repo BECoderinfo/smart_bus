@@ -1,10 +1,13 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-    host: 'dpg-cqtljm8gph6c739t312g-a',
-    user: 'bus',
-    password: 'ARiF2Gt3wy931nJNQmzYVBZkET5JPbzZ',
-    database: 'smart_bus'
+    host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
+    user: 'zdkWNjwuisPrV3d.root',
+    password: 'aSHbor0iiaxunbTY',
+    database: 'test',
+    ssl: {
+        rejectUnauthorized: true // or false, depending on your setup
+    }
 });
 
 connection.connect((err) => {
