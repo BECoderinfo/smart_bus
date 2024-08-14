@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
     ssl: {
         rejectUnauthorized: true
     },
-    connectTimeout: 10000 // Increase the timeout (in milliseconds)
+    connectTimeout: 40000 // Increase the timeout (in milliseconds)
 });
 
 connection.connect((err) => {
